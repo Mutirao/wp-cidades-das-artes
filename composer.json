@@ -38,7 +38,8 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.5.3",
     "oscarotero/env": "^1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "wpackagist-plugin/elementor": "^0.6.5"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
@@ -54,6 +55,10 @@
   "scripts": {
     "test": [
       "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
+    ],
+    "post-install-cmd": [
+      "cd web/app/themes/apoied-haddad && npm install",
+      "cd web/app/themes/apoied-haddad && npm run build:production"
     ]
   }
 }
