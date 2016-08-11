@@ -60,9 +60,6 @@
   "scripts": {
     "test": [
       "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
-    ],
-    "post-install-cmd": [
-      "npm run build:production"
     ]
   }
 }

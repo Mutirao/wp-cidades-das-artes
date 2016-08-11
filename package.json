@@ -18,7 +18,7 @@
     }
   ],
   "scripts": {
-    "build:production": "webpack -p --progress --release",
+    "install": "webpack -p --progress --release",
     "build": "webpack -d --progress",
     "watch": "node watch.js --watch",
     "lint": "eslint -c .eslintrc assets/scripts watch.js webpack.config.js"
