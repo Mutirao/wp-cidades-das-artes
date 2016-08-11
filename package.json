@@ -21,8 +21,7 @@
     "build:production": "webpack -p --progress --release",
     "build": "webpack -d --progress",
     "watch": "node watch.js --watch",
-    "lint": "eslint -c .eslintrc assets/scripts watch.js webpack.config.js",
-    "install": "composer install"
+    "lint": "eslint -c .eslintrc assets/scripts watch.js webpack.config.js"
   },
   "engines": {
     "node": ">=4"
