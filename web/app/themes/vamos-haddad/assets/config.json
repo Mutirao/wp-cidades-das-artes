@@ -1,5 +1,5 @@
 {
-  "context": "assets",
+  "context": "./web/app/themes/vamos-haddad/assets",
   "entry": {
     "main": [
       "./scripts/main.js",
@@ -10,9 +10,9 @@
     ]
   },
   "output": {
-    "path": "dist",
+    "path": "./web/app/themes/vamos-haddad/dist",
     "publicPath": "/app/themes/sage/dist/"
   },
-  "devUrl": "http://example.dev",
+  "devUrl": "http://localhost",
   "devPort": 3000
 }
