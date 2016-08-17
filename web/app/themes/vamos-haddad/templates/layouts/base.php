@@ -12,8 +12,8 @@
       get_template_part('partials/header');
     ?>
     <div class="wrap" role="document">
-      <div class="content row">
-        <main class="main">
+      <div>
+        <main>
           <?php include App\template()->main(); ?>
         </main>
         <?php if (App\display_sidebar()) : ?>
