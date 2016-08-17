@@ -39,7 +39,7 @@
     "johnpbloch/wordpress": "4.6",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "wpackagist-plugin/elementor": "^0.6.5",
+    "wpackagist-plugin/elementor": "0.7.1",
     "wpackagist-plugin/mailchimp-for-wp": "4.0.2",
     "wpackagist-plugin/wp-google-fonts": "3.1.4",
     "wpackagist-plugin/contact-form-7": "4.5",
