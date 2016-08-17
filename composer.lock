@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2ec617cbe53cea3facdd94149624a02a",
-    "content-hash": "f3fd751a8b963a0287a47caacae54839",
+    "hash": "46411f5844de849193325c126158a4b3",
+    "content-hash": "b69ae6510b6c16b9ab2d4064b2dea6ca",
     "packages": [
         {
             "name": "composer/installers",
@@ -441,6 +441,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/sendgrid-email-delivery-simplified/"
+        },
+        {
+            "name": "wpackagist-plugin/video-background",
+            "version": "2.5.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/video-background/",
+                "reference": "tags/2.5.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/video-background.2.5.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/video-background/"
         },
         {
             "name": "wpackagist-plugin/wp-google-fonts",

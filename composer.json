@@ -44,6 +44,7 @@
     "wpackagist-plugin/wp-google-fonts": "3.1.4",
     "wpackagist-plugin/contact-form-7": "4.5",
     "wpackagist-plugin/jetpack": "dev-trunk",
+	"wpackagist-plugin/video-background": "2.5.8",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "1.9.4"
   },
   "require-dev": {
