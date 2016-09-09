@@ -47,6 +47,7 @@
 	"wpackagist-plugin/video-background": "2.5.8",
 	"wpackagist-plugin/wp-ses": "0.4.8",
 	"wpackagist-plugin/sendpress": "1.7.8.11",
+	"wpackagist-plugin/wysija-newsletters": "2.7.5",
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "1.9.4"
   },
   "require-dev": {

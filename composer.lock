@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c41da7e681be71311c16912eebb4e4f8",
-    "content-hash": "961ab75d1285beb55df4104b471fbabb",
+    "hash": "27e43c7913b0269be092dfdb7c8a128d",
+    "content-hash": "4d873c0643d8bae2176f53203c6e0e71",
     "packages": [
         {
             "name": "composer/installers",
@@ -521,6 +521,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-ses/"
+        },
+        {
+            "name": "wpackagist-plugin/wysija-newsletters",
+            "version": "2.7.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wysija-newsletters/",
+                "reference": "tags/2.7.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wysija-newsletters.2.7.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wysija-newsletters/"
         }
     ],
     "packages-dev": [
