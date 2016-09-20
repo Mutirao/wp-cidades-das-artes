@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Mutirao/Maloca.git",
-                "reference": "63a7337c3832aca26605f52f46e09866417aa349"
+                "reference": "36e42d800371eea535f8f98a47aa00fc250f8576"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Mutirao/Maloca/zipball/63a7337c3832aca26605f52f46e09866417aa349",
-                "reference": "63a7337c3832aca26605f52f46e09866417aa349",
+                "url": "https://api.github.com/repos/Mutirao/Maloca/zipball/36e42d800371eea535f8f98a47aa00fc250f8576",
+                "reference": "36e42d800371eea535f8f98a47aa00fc250f8576",
                 "shasum": ""
             },
             "require": {
@@ -29,7 +29,7 @@
                 "source": "https://github.com/Mutirao/Maloca/tree/develop",
                 "issues": "https://github.com/Mutirao/Maloca/issues"
             },
-            "time": "2016-09-20 09:14:33"
+            "time": "2016-09-20 10:21:03"
         },
         {
             "name": "composer/installers",
