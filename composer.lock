@@ -4,9 +4,33 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "27e43c7913b0269be092dfdb7c8a128d",
-    "content-hash": "4d873c0643d8bae2176f53203c6e0e71",
+    "hash": "e5cceed4a655a422b6566c2c25739397",
+    "content-hash": "f9f2414990c2b1c6ad4001d262791b3a",
     "packages": [
+        {
+            "name": "Mutirao/Maloca",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Mutirao/Maloca.git",
+                "reference": "7b60bea2ca20e55582c3ec6bb995d49b0a635583"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Mutirao/Maloca/zipball/7b60bea2ca20e55582c3ec6bb995d49b0a635583",
+                "reference": "7b60bea2ca20e55582c3ec6bb995d49b0a635583",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "support": {
+                "source": "https://github.com/Mutirao/Maloca/tree/develop",
+                "issues": "https://github.com/Mutirao/Maloca/issues"
+            },
+            "time": "2016-09-20 05:22:35"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.25",
@@ -626,6 +650,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "mutirao/maloca": 20,
         "wpackagist-plugin/jetpack": 20
     },
     "prefer-stable": false,

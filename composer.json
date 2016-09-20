@@ -30,10 +30,15 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/mutirao/maloca"
     }
   ],
   "require": {
     "php": ">=5.6",
+    "mutirao/maloca": "dev-develop",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.6",
