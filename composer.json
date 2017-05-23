@@ -34,6 +34,10 @@
     {
       "type": "vcs",
       "url": "https://github.com/mutirao/maloca"
+    },
+    {
+        "type": "composer",
+        "url": "https://wp-languages.github.io"
     }
   ],
   "require": {
@@ -49,11 +53,14 @@
     "wpackagist-plugin/wp-google-fonts": "3.1.4",
     "wpackagist-plugin/contact-form-7": "4.5",
     "wpackagist-plugin/jetpack": "dev-trunk",
-	"wpackagist-plugin/video-background": "2.5.8",
-	"wpackagist-plugin/wp-ses": "0.4.8",
-	"wpackagist-plugin/sendpress": "1.7.8.11",
-	"wpackagist-plugin/wysija-newsletters": "2.7.5",
-    "wpackagist-plugin/sendgrid-email-delivery-simplified": "1.9.4"
+	  "wpackagist-plugin/video-background": "2.5.8",
+	  "wpackagist-plugin/wp-ses": "0.4.8",
+	  "wpackagist-plugin/sendpress": "1.7.8.11",
+ 	  "wpackagist-plugin/wysija-newsletters": "2.7.5",
+    "wpackagist-plugin/sendgrid-email-delivery-simplified": "1.9.4",
+    "koodimonni/composer-dropin-installer": "dev-master",
+    "koodimonni-language/pt_br": "*",
+    "koodimonni-language/core-pt_br": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
@@ -68,6 +75,11 @@
       "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "dropin-paths": {
+      "web/app/languages/": ["vendor:koodimonni-language"],
+      "web/app/languages/plugins/": ["vendor:koodimonni-plugin-language"],
+      "web/app/languages/themes/": ["vendor:koodimonni-theme-language"]
     },
     "wordpress-install-dir": "web/wp"
   },
