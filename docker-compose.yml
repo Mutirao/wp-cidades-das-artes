@@ -1,0 +1,58 @@
+version: '2.1'
+
+volumes:
+  # We'll define a volume that will store the data from the postgres databases:
+  mysql-data:
+    driver: local
+  composer:
+    driver: local
+
+services:
+  # Our PostgreSQL service:
+  mysql:
+    image: mysql
+    ports:
+      # We'll bind our host's port 5432 to postgres's port 5432, so we can use
+      # our database IDEs with it:
+      - 3306:3306
+    volumes:
+      # - ./bin/init.sql:/docker-entrypoint-initdb.d/init.sql
+      # We'll mount the 'postgres-data' volume into the location Postgres stores it's data:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: mutirao
+
+  # Our Redis service:
+  # redis:
+  #   image: redis:3.2.4-alpine
+  #   ports:
+  #     # We'll bind our host's port 6379 to redis's port 6379, so we can use
+  #     # Redis Desktop Manager (or other tools) with it:
+  #     - 6379:6379
+  #   volumes:
+  #     # We'll mount the 'redis-data' volume into the location redis stores it's data:
+  #     - redis-data:/var/lib/redis
+  #   command: redis-server --appendonly yes
+
+  # Application: -----------------------------------------------------------------
+  # We'll also use this configuration (&app_base) for the web and test containers:
+  wp:
+    depends_on:
+      - mysql
+    volumes:
+      - ./:/usr/src/myapp:Z
+      - composer:/usr/src/myapp/vendor
+    ports:
+      - "8080:8080"
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    restart: always
+    links:
+      - mysql:db
+    extra_hosts:
+      - "mutirao.devel:127.0.0.1"
+    env_file:
+      - .env
+
